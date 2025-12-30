@@ -5,6 +5,7 @@ import { PokemonModule } from './pokemon/pokemon.module';
 import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { MongooseModule } from '@nestjs/mongoose';
+import { SeedModule } from './seed/seed.module';
 
 @Module({
   imports: [ 
@@ -13,7 +14,7 @@ import { MongooseModule } from '@nestjs/mongoose';
       
       MongooseModule.forRoot('mongodb://localhost:27017/mi_mongodb')
       
-      ,PokemonModule],
+      ,PokemonModule, SeedModule],
   controllers: [AppController],
   providers: [AppService],
 })
