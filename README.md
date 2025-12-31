@@ -45,7 +45,8 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
+## Cargar una semilla com 1000 regisros
+http://localhost:3000/seed/
 
 ## Support
 
